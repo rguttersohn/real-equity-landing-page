@@ -1,32 +1,181 @@
 <template>
   <div id="app">
+    <Header />
+    <Intro />
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link :to="{name:'Economic'}">
+        <img
+          src="https://www.cccnewyork.org/wp-content/uploads/2020/09/economy-icon.png"
+          alt="icon for economic equity"
+        />
+        <h2>
+          Economic
+          <br />Equity
+        </h2>
+        <p>Oct. 1</p>
+      </router-link>
+      <router-link :to="{name:'Housing'}">
+        <img
+          src="https://www.cccnewyork.org/wp-content/uploads/2020/09/housing-icon.png"
+          alt="icon for housing equity"
+        />
+        <h2>
+          Housing
+          <br />Equity
+        </h2>
+        <p>Oct. 8</p>
+      </router-link>
+      <router-link :to="{name:'Health'}">
+        <img
+          src="https://www.cccnewyork.org/wp-content/uploads/2020/09/health-icon.png"
+          alt="icon for health equity"
+        />
+        <h2>
+          Health
+          <br />Equity
+        </h2>
+        <p>Oct. 15</p>
+      </router-link>
+      <router-link :to="{name:'Education'}">
+        <img
+          src="https://www.cccnewyork.org/wp-content/uploads/2020/09/education-icon.png"
+          alt="icon for education equity"
+        />
+        <h2>
+          Education
+          <br />Equity
+        </h2>
+        <p>Oct. 22</p>
+      </router-link>
+      <router-link :to="{name:'Justice'}">
+        <img
+          src="https://www.cccnewyork.org/wp-content/uploads/2020/09/justice-icon.png"
+          alt="icon for justice equity"
+        />
+        <h2>
+          Justice
+          <br />Equity
+        </h2>
+        <p>Oct. 29</p>
+      </router-link>
     </div>
     <router-view />
+    <Orgs />
   </div>
 </template>
 
+<script>
+import Header from "@/components/Header.vue";
+import Intro from "@/components/Intro.vue";
+import Orgs from "@/components/Orgs.vue";
+export default {
+  components: {
+    Header,
+    Intro,
+    Orgs
+  }
+};
+</script>
+
 <style>
+#app * {
+  font-family: sans-serif;
+  line-height: 150%;
+}
+
+#app p,
+strong,
+em,
+li,
+ul,
+ol,
+text,
+h3 {
+  font-size: 16px;
+}
+
+#app h2,
+#app strong {
+  font-weight: bold;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+  width: 992px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#nav {
+#app #nav {
   padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  border-bottom:1px solid #c1c1c1; 
 }
 
-#nav a {
+#app #nav a {
+  padding: 1%;
   font-weight: bold;
-  color: #2c3e50;
+  color: #333333;
+  margin: 0 3%;
+  width: 20%;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #fcf7f6;
+  border-bottom: 1px solid  #cc6633
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+#app #nav a p{
+  font-size:90%;
+  font-style: italic;
+  font-weight:initial;
+  color:slategray;
+  text-decoration: unset!important;
+
+}
+
+#app #nav a:hover {
+  background-color: #fcf7f6;
+}
+
+#app #nav a.router-link-exact-active {
+  background-color:initial;
+  border-bottom: initial;
+}
+
+#app #nav a.router-link-exact-active h2 {
+  color: #cc6633;
+}
+
+#app #nav a img {
+  width: 50%;
+}
+
+@media screen and (max-width: 928px) {
+  #app {
+    width: 100vw;
+    margin: 0;
+  }
+  #app #nav {
+    width: 100vw;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  #app #nav a img {
+    width: 100%;
+    margin: 0 5%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #app #nav a h3 {
+    display: none;
+  }
 }
 </style>
