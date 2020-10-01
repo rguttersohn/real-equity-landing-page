@@ -115,28 +115,35 @@ h3 {
   padding: 30px;
   display: flex;
   align-items: flex-start;
-  border-bottom:1px solid #c1c1c1; 
+  justify-content: space-around;
 }
 
 #app #nav a {
   padding: 1%;
   font-weight: bold;
   color: #333333;
-  margin: 0 3%;
+  margin: 0 1%;
   width: 20%;
   text-align: center;
   border-radius: 15px;
-  background-color: #fcf7f6;
-  border-bottom: 1px solid  #cc6633
+  border-bottom: 1px solid #cc6633;
+  position: relative;
+  z-index: 20;
 }
 
-#app #nav a p{
-  font-size:90%;
-  font-style: italic;
-  font-weight:initial;
-  color:slategray;
-  text-decoration: unset!important;
+#app #nav a:first-child {
+  margin-left: 0%;
+}
 
+#app #nav a:last-child {
+  margin-right: 0%;
+}
+
+#app #nav a p {
+  font-style: italic;
+  font-weight: initial;
+  color: slategray;
+  text-decoration: unset !important;
 }
 
 #app #nav a:hover {
@@ -144,8 +151,9 @@ h3 {
 }
 
 #app #nav a.router-link-exact-active {
-  background-color:initial;
   border-bottom: initial;
+  padding-bottom: 50px;
+  background-color: #fcf7f6;
 }
 
 #app #nav a.router-link-exact-active h2 {
@@ -167,14 +175,28 @@ h3 {
     align-items: flex-end;
   }
 
+  #app #nav a {
+    margin: 0 3%;
+      border-bottom:initial;
+      border-radius:5px;
+
+  }
+
   #app #nav a img {
     width: 100%;
-    margin: 0 5%;
+    display:block;
+    margin:auto;
+  }
+
+  #app #nav a.router-link-exact-active{
+    padding-bottom:initial;
+     border: 1px solid #cc6633;
   }
 }
 
 @media screen and (max-width: 700px) {
-  #app #nav a h3 {
+  #app #nav a h2,
+  #app #nav a p {
     display: none;
   }
 }

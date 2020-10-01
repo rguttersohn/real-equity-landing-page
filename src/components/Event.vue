@@ -49,11 +49,14 @@ export default {
 
 <style >
 #app .event-wrapper {
-  width: 70%;
+  width: 94%;
   margin: auto;
   margin-bottom: 5%;
   padding:3%;
   border-radius:15px;
+  position: relative;
+  bottom:50px;
+  background: #fcf7f6
 }
 
 #app .event-wrapper h2 span, #app .event-wrapper p span{
@@ -75,39 +78,24 @@ font-weight:bold;
   border: none;
   border-radius: 15px;
   transition: all 0.3s ease-in-out;
-  margin: 3% auto;
+  margin: 1% auto;
 }
-#app  .event-wrapper a button.event-passed {
+#app .event-wrapper a button.event-passed {
   cursor:initial;
-  background-color: #fcedd0;
+  background-color: #989286;
 }
 
 #app .event-wrapper a button.event-passed:hover {
   background-color: #fcedd0;
-  color:initial
+  color:initial;
 }
 
-#app .add-highlight {
-  animation: fade-highlight;
-  animation-fill-mode: forwards;
-  animation-iteration-count: initial;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-}
-
-@keyframes fade-highlight {
-  from {
-    background-color: #fee3df;
-  }
-  to {
-    background-color: #ffffff;
-  }
-}
 
 @media screen and (max-width:928px){
   #app .event-wrapper{
     width:90%;
     margin:auto;
+    position:static;
   }
 }
 </style>

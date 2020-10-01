@@ -17,8 +17,8 @@ export default {
         when: "October 1 from 9:30-10:30AM",
         host: "Jennifer Jones Austin, FPWA’s CEO and Executive Director",
         panelists: [
-          "Ron Deutsch, Executive Director of the Fiscal Policy InstituteDarrick Hamilton",
-          "Henry Cohen Professor of Economics and Urban Policy and Founding Director of the Institute for the Study of Race, Stratification, and Political Economy at the New School"
+          "Ron Deutsch, Executive Director of the Fiscal Policy Institute",
+          "Darrick Hamilton, Henry Cohen Professor of Economics and Urban Policy and Founding Director of the Institute for the Study of Race, Stratification, and Political Economy at the New School"
         ],
         intro: `
             <p>
