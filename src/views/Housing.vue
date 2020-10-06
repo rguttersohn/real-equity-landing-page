@@ -25,7 +25,8 @@ export default {
         </p>
             `,
         url: "https://cccnewyork.salsalabs.org/housing-equity-event/index.html?page=register",
-        date: "October 8, 2020"
+        date: "October 8, 2020",
+        jsonDate:"2020-10-08T09:30"
       }
     };
   }

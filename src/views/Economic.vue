@@ -30,7 +30,8 @@ export default {
             `,
         url:
           "https://us02web.zoom.us/webinar/register/1316001774698/WN_7DTnNuJFTbCRuHNRkECR0A",
-        date: "October 1, 2020"
+        date: "October 1, 2020",
+        jsonDate:"2020-10-01T09:30"
       }
     };
   }

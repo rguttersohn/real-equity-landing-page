@@ -20,14 +20,14 @@
 <script>
 export default {
   props: {
-    details: Array
+    details: Object
   },
   computed:{
     date(){
       return new Date()
     },
     eventDate(){
-      return new Date(this.details.date)
+      return new Date(this.details.jsonDate)
     }
   },
   data() {
@@ -42,6 +42,8 @@ export default {
     }
   },
   mounted() {
+    console.log("event date", this.eventDate)
+    console.log("current date", this.date)
     this.addHighlightClass();
   }
 };

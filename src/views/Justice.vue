@@ -22,7 +22,8 @@ export default {
             </p>
             `,
         url:"https://us02web.zoom.us/webinar/register/5516001774889/WN_wJRLx2GlSXmSzcK2vZGbOQ",
-      date: "October 29, 2020"
+      date: "October 29, 2020",
+      jsonDate:"2020-10-29T09:30"
       }
     };
   }

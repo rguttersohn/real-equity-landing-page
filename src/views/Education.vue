@@ -24,7 +24,8 @@ export default {
         `<p>
           The racial educational achievement gap is interconnected with systemic inequality. Black and brown students from families with low incomes are more likely to be below proficiency standards, dropout of high school and not complete college.</p> <p>Join us as we explore how we got here and how do we begin to address these deep educational disparities across our city.</p>`,
         url: "https://zoom.us/webinar/register/WN_cF121POmRIi4F7CbM6KQyw",
-        date: "October 22, 2020"
+        date: "October 22, 2020",
+        jsonDate:"2020-10-22T09:30"
       }
     };
   }

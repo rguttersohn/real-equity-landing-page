@@ -27,7 +27,8 @@ export default {
              </p>
              `,
         url: "https://cccnewyork.salsalabs.org/childrens-behavioral-health-event/index.html?page=register",
-        date: "October 15, 2020"
+        date: "October 15, 2020",
+        jsonDate:"2020-10-15T08:30"
       }
     };
   }
